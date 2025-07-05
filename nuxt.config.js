@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { VUE_APP_MICROCMS_KEY,VUE_APP_MICROCMS_URL,VUE_APP_MICROCMS_WRITE_KEY, VUE_APP_SLACK_URL, VUE_APP_SLACK_URL2} = process.env;
+const { VUE_APP_MICROCMS_KEY,VUE_APP_MICROCMS_URL} = process.env;
 
 export default {
   mode: 'universal',
@@ -31,9 +31,6 @@ export default {
   env: {
     VUE_APP_MICROCMS_KEY,
     VUE_APP_MICROCMS_URL,
-    VUE_APP_MICROCMS_WRITE_KEY,
-    VUE_APP_SLACK_URL,
-    VUE_APP_SLACK_URL2
   },
   buildModules: [
     '@nuxt/image',
